@@ -21,14 +21,13 @@ const TextToImageGenerator = () => {
   const generateImage = async () => {
     setLoading(true); // Set loading to true when the function starts
     const options = {
-    const options = {
-  method: 'POST',
-  url: 'https://ai-image-generator3.p.rapidapi.com/generate',
-  headers: {
-    'x-rapidapi-key': '7ca26a1c25msh9b1219997305dc7p11e8f1jsn2359eb84a1e6',
-    'x-rapidapi-host': 'ai-image-generator3.p.rapidapi.com',
-    'Content-Type': 'application/json'
-  },
+      method: 'POST',
+      url: 'https://ai-image-generator3.p.rapidapi.com/generate',
+      headers: {
+        'x-rapidapi-key': '7ca26a1c25msh9b1219997305dc7p11e8f1jsn2359eb84a1e6',
+        'x-rapidapi-host': 'ai-image-generator3.p.rapidapi.com',
+        'Content-Type': 'application/json'
+      },
       data: {
         prompt: text,
         page: 1
